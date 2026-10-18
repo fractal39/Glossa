@@ -31,7 +31,7 @@ export type Hold = Element | Text | DocumentFragment;
 // `samp`, `var` and `math` through verbatim on its own; translate="no" and .notranslate are DOM
 // conventions it knows nothing about, so those are swapped for a `var` placeholder before the
 // fragment leaves the page and swapped back when the translation returns.
-const HOLD_SELECTOR = '[translate="no" i], .notranslate';
+const HOLD_SELECTOR = 'code, kbd, samp, var, math, [translate="no" i], .notranslate';
 export const HOLD_ATTRIBUTE = "data-glossa-hold";
 
 // Every element inside a unit is numbered before the unit is sent. The engine carries data-*
